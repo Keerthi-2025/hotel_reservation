@@ -1,6 +1,6 @@
  import mongoose from "mongoose";
 
- const dbConnection = ()=>{
+ export const dbConnection = ()=>{
     mongoose.connect(process.env.MONGO_URI,{
         dbName:"youtubeclone"
     }).then(() => {
