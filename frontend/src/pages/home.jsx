@@ -1,9 +1,26 @@
-import React from 'react'
+/*import React from 'react'
+import HeroSection from '../components/HeroSection'
 
-const home = () => {
+const Home = () => {
   return (
-   <h1>Home page</h1>
+   
+   <HeroSection/>
   )
 }
 
-export default home
+export default Home;*/
+
+import React from 'react';
+
+const Home = () => {
+  console.log('✅ Home component rendered');
+  return (
+    <div style={{ textAlign: 'center', marginTop: '100px', fontSize: '24px' }}>
+      <h1>🏠 Welcome to SamYoga Home Page</h1>
+    </div>
+  );
+};
+
+export default Home;
+
+

@@ -2,17 +2,17 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
-import Home from './pages/home';
-import NotFound from './pages/notfound';
-import Success from './pages/success';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound'; // Case-sensitive match
+import Success from './pages/Success';
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/notfound" element={<NotFound />} />
-        <Route path="*" element={<Success />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Toaster />
     </Router>
