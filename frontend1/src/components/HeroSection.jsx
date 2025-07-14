@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from './Navbar';
 
 const HeroSection = () => {
   return (
     <section className='herosection' id='herosection'>
-    
+    <Navbar/>
       <div className="container">
         <div className="banner">
           <div className="largeBox">
